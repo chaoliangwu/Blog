@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+    - 8.12.0
+cache: # 缓存, 可加快构建速度
+    directories:
+        - node_modules
+script:
+    - yarn deploy-ci
+branch: master

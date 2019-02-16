@@ -1,0 +1,15 @@
+{
+    "name": "Blog",
+    "description": "基于VuePress搭建的博客、托管于Github Pages、由Travis CI提供持续集成服务",
+    "scripts": {
+        "dev": "vuepress dev src",
+        "build": "vuepress build src",
+        "deploy": "~/bin/deploy.sh", 
+        "deploy-ci": "./deploy.sh",
+        "clean": "rm -rf dist"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "vuepress": "^0.14.8"
+    }
+}
