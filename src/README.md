@@ -1,3 +1,10 @@
+---
+home: true
+heroImage: /assets/img/logo.png
+heroText: A23187
+tagline: Messi | BreakingBad | Coder | Scuter
+footer: MIT Licensed | Copyright © 2019-present A23187
+---
 # LeetCode每日一题 只出现一次的数字
 ## [题目](https://leetcode-cn.com/problems/single-number/description/)
 > 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。  
