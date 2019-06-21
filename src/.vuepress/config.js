@@ -36,6 +36,12 @@ module.exports = {
     ]
   },
   plugins: {
-    '@vuepress/back-to-top': true
+    '@vuepress/back-to-top': true,
+    '@vuepress/last-updated': {
+      transformer: (timestamp, lang) => {
+        const moment = require('moment');
+        return moment(timestamp).format('MMM DD, YYYY HH:mm');
+      }
+    }
   }
 }
