@@ -3,6 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 设置时区为上海时区，避免文章最后更新时间显示不正确
+sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+
 # 生成静态文件
 yarn build
 

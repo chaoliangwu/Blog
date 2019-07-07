@@ -41,4 +41,6 @@
 - [ ] 完善文档
 
 ## FIXME
-- [ ] 修复Travis CI时区不正确而导致的最后更新时间不正确的Bug
+- [x] 修复Travis CI时区不正确而导致的最后更新时间不正确的Bug  
+  NOTE:  
+  使用`lsb_release -a`命令，查看Travis CI所使用的Linux发行版，结果是Ubuntu。而Ubuntu系统可以使用`sudo cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime`命令 (注意，`sudo`权限) 来设置时区为上海时区。所以，先通过命令`ls /usr/share/zoneinfo/Asia/ | grep Shanghai`来确定Travis CI上是否存在上海时区文件，结果的确存在。而且，在Travis CI上使用`sudo`命令也并不需要输入密码，那就🆗了。
