@@ -1,7 +1,7 @@
 ---
 title: Bitcoin的密码学基础
 prev: ./00 Introduction.md
-next: false
+next: ./02 Data Structure used in Bitcoin.md 
 ---
 
 # Bitcoin的密码学基础
