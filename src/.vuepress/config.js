@@ -23,7 +23,7 @@ module.exports = {
         text: 'Category',
         items: [
           { text: 'Algorithm', link: '/algorithm/' },
-          { text: 'BlockChain', link: '/blockchain/' }
+          { text: 'BlockChain', link: '/blockchain/PKU-MOOC-NOTES/00 Introduction.md' }
         ]
       },
       {
