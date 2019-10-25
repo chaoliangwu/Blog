@@ -13,7 +13,7 @@ yarn build
 cd dist
 
 # 如果是发布到自定义域名
-echo 'www.a23187.cn' > CNAME
+# echo 'www.a23187.cn' > CNAME
 
 git init
 git add -A # 等价于 git add --all
@@ -21,9 +21,8 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:A-23187/A-23187.github.io.git master
-git push -f https://${access_token}@github.com/A-23187/A-23187.github.io.git master
-
+# git push -f https://${access_token}@github.com/A-23187/A-23187.github.io.git master
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+# git push -f git@github.com:chaoliangwu/Blog.git master:gh-pages
 
 cd -
